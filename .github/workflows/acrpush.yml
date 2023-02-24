@@ -30,4 +30,4 @@ jobs:
       with:
         push: true
         tags: testjhbb.azurecr.io/coursegoal:${{ github.sha }}
-        file: aspnet-core-dotnet-core/Dockerfile
+        file: Dockerfile
