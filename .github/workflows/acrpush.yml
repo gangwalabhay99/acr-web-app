@@ -1,7 +1,6 @@
 name: docker_build_push_acr
  
-on:
-  workflow_dispatch:
+on: push  
  
 jobs:
   docker_build_push_acr:
@@ -30,5 +29,5 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: testjhbb.azurecr.io/CourseGoal:${{ github.sha }}
+        tags: testjhbb.azurecr.io/coursegoal:${{ github.sha }}
         file: aspnet-core-dotnet-core/Dockerfile
